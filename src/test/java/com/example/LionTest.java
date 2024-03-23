@@ -21,10 +21,6 @@ public class LionTest {
     Feline feline;
 
     // Проверка вызова метода feline.getKittens() внутри метода lion.getKittens()
-    // У меня вопрос, мне вот кажется, что здесь можно использовать шпион льва И обойтись без мока feline
-    // чтобы убедиться, что вызван метод feline.getKittens() внутри метода lion.getKittens()
-    // Верно ли я рассуждаю? В следующем тесте мне кажется такая же ситуация
-    // Поправьте меня пожалуйста, если я не прав
     @Test
     public void getKittensTest() throws Exception {
         Lion lion = new Lion("Самец", felineMock);
